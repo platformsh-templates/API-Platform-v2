@@ -5,7 +5,7 @@
 name: admin
 
 # The toolstack used to build the application.
-type: nodejs:18
+type: nodejs:14
 build:
     flavor: none
 
