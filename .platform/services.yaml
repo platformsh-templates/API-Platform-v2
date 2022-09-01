@@ -1,3 +1,13 @@
 mysqldb:
     type: mysql:10.0
     disk: 1024
+    configuration:
+        schemas:
+            - main
+            # Uncomment if you want to store dfs tables in a separate database:
+            #- dfs
+        endpoints:
+            user:
+                default_schema: main
+                privileges:
+                    main: admin
