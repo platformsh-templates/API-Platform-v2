@@ -2351,7 +2351,7 @@
                 "php": "^7.0"
             },
             "require-dev": {
-                "composer/composer": "^1.0.2",
+                "composer/composer": "^2",
                 "symfony/phpunit-bridge": "^3.2.8"
             },
             "type": "composer-plugin",
