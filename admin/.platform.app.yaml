@@ -8,6 +8,7 @@ name: admin
 type: nodejs:16
 build:
     flavor: none
+
 variables:
   env:
     NODE_OPTIONS: '--max-old-space-size=1536'
@@ -46,6 +47,8 @@ disk: 1024
 mounts:
   '/build_platform': 'shared:files/build_platform'
   '/.tmp_platformsh': 'shared:files/tmp_platformsh'
+  '/build': 'shared:files/build'
+  '/.cache': 'shared:files/.cache'
 
 # The hooks that will be performed when the package is deployed.
 hooks:
