@@ -8,10 +8,18 @@ name: admin
 type: nodejs:16
 build:
     flavor: none
+variables:
+  env:
+    NODE_OPTIONS: '--max-old-space-size=1536'
 
-dependencies:
-  nodejs:
-    yarn: "*"
+size: L
+resources:
+  base_memory: 1024
+  memory_ratio: 1024
+
+#dependencies:
+#  nodejs:
+#    yarn: "*"
 
 # The configuration of app when it is exposed to the web.
 web:
@@ -43,8 +51,8 @@ mounts:
 hooks:
     build: |
       set -e
-      yarn install
-      npm run build
+      corepack yarn install --immutable
     deploy: |
-      npm run buildenvvar
-      yarn start
+      corepack yarn run buildenvvar
+      corepack yarn run build
+      corepack yarn start
