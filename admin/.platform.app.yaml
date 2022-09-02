@@ -58,4 +58,4 @@ hooks:
     deploy: |
       corepack yarn run buildenvvar
       corepack yarn run build
-      corepack yarn start
+#      corepack yarn start
