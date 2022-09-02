@@ -52,5 +52,6 @@ hooks:
     build: |
         bin/console --env=prod assets:install --no-debug
     deploy: |
-        bin/console --env=prod doctrine:schema:update
+        bin/console --env=prod doctrine:schema:update --dump-sql
+        bin/console --env=prod doctrine:schema:update --force
         bin/console --env=prod cache:clear
