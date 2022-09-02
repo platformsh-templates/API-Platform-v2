@@ -6,7 +6,7 @@ nelmio_cors:
         origin_regex: true
 #        allow_credentials: false
 #        allow_origin: ['%cors_allow_origin%']
-        allow_origin: ['https:\/\/api\.master-7rqtwti.*']
+        allow_origin: ['https://api.master-7rqtwti.*']
         allow_methods: [ 'GET', 'OPTIONS', 'POST', 'PUT', 'PATCH', 'DELETE' ]
         allow_headers: [ 'Content-Type', 'Authorization' ]
         expose_headers: [ 'Content-Disposition', 'Content-Length', 'Link' ]
@@ -17,7 +17,7 @@ nelmio_cors:
 #        '^/api/':
         '^/':
             origin_regex: true
-            allow_origin: ['https:\/\/api\.master-7rqtwti.*'] # You probably want to change this regex to match your real domain
+            allow_origin: ['https://api.master-7rqtwti.*'] # You probably want to change this regex to match your real domain
             allow_methods: ['GET', 'OPTIONS', 'POST', 'PUT', 'PATCH', 'DELETE']
             allow_headers: ['Content-Type', 'Authorization']
             expose_headers: [ 'Content-Disposition', 'Content-Length', 'Link' ]
