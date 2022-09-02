@@ -30,8 +30,10 @@ export default function register() {
       return;
     }
 
+    console.log('here');
     window.addEventListener('load', () => {
       const swUrl = `${process.env.PUBLIC_URL}/service-worker.js`;
+      console.log('swurl', swUrl);
 
       if (!isLocalhost) {
         // Is not local host. Just register service worker
@@ -71,6 +73,7 @@ function registerValidSW(swUrl) {
     .catch(error => {
       console.error('Error during service worker registration:', error);
     });
+  console.log('end registration service worker')
 }
 
 function checkValidServiceWorker(swUrl) {
