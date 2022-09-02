@@ -37,6 +37,8 @@ web:
             root: "public"
             # The front-controller script to send non-static requests to.
             passthru: "/index.php"
+            headers:
+                Access-Control-Allow-Origin: *
 
 # The size of the persistent disk of the application (in MB).
 disk: 2048
