@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "85ce96ee0000338fa14674f26e5cf55e",
+    "content-hash": "e5693e34dcd1ac7bd9e7e20e04456a85",
     "packages": [
         {
             "name": "api-platform/core",
@@ -6271,10 +6271,8 @@
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "nelmio/cors-bundle": 20
-    },
-    "prefer-stable": false,
+    "stability-flags": [],
+    "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
         "php": ">=8.1",

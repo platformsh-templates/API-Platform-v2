@@ -8,7 +8,7 @@ if(!entrypoint) {
     entrypoint = 'https://api.master-7rqtwti-7rmsoyfng4yww.fr-3.platformsh.site/';
 }
 entrypoint = entrypoint.substring(0, entrypoint.length - 1);
-console.log(entrypoint);
+console.log('entrypoint', entrypoint);
 
 class App extends Component {
     render() {
