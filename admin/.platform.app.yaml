@@ -47,3 +47,4 @@ hooks:
       npm run build
     deploy: |
       npm run buildenvvar
+      yarn start

@@ -10,6 +10,10 @@ if(!entrypoint) {
 entrypoint = entrypoint.substring(0, entrypoint.length - 1);
 console.log('entrypoint', entrypoint);
 
+// export default () => (
+//     <HydraAdmin entrypoint="{entrypoint}" />
+// );
+
 class App extends Component {
     render() {
         return <HydraAdmin entrypoint={entrypoint}/>
