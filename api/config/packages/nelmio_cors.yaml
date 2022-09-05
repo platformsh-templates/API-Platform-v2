@@ -17,9 +17,8 @@ nelmio_cors:
 #        '^/api/':
         '^/':
             origin_regex: true
-            allow_origin: ['^https?:\/\/.*7rqtwti.*$'] # You probably want to change this regex to match your real domain
+            allow_origin: ['*'] # You probably want to change this regex to match your real domain
             allow_methods: ['GET', 'OPTIONS', 'POST', 'PUT', 'PATCH', 'DELETE']
-            allow_headers: ['Content-Type', 'Authorization', 'X-Custom-Auth']
+            allow_headers: ['Content-Type', 'Authorization']
             expose_headers: [ 'Content-Disposition', 'Content-Length', 'Link' ]
             max_age: 3600
-            hosts: ['^https?:\/\/api\.']
