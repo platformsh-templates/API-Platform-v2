@@ -12,7 +12,8 @@ https://{default}/:
   type: upstream
   upstream: admin:http
 
-https://{default}/api/:
+https://{default}:
     type: upstream
     # the first part should be your project name
     upstream: "api:http"
+    prefix: "api"
