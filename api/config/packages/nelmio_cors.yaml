@@ -11,7 +11,7 @@ nelmio_cors:
         expose_headers: [ 'Content-Disposition', 'Content-Length', 'Link' ]
         max_age: 3600
         hosts: []
-        forced_allow_origin_value: ~
+#        forced_allow_origin_value: ~
     paths:
         '^/': ~
         '^/api/':
