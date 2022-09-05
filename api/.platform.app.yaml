@@ -41,8 +41,9 @@ web:
                 Access-Control-Allow-Origin: "*"
         "/bundles":
             root: "public"
+            expires: 300
             passthru: true
-            expire: 300
+            allow: false
             rules:
                 # Only allow static image files in this location
                 '\.(jpe?g|png|gif|svgz?|ico|bmp|css)$':
