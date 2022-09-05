@@ -5,7 +5,7 @@ console.log(Object.keys(platformVar));
 
 // let entrypoint = Object.keys(platformVar).find(url => url.endsWith('/api'));
 
-entrypoint = 'https://master-7rqtwti-7rmsoyfng4yww.fr-3.platformsh.site/api/';
+let entrypoint = 'https://master-7rqtwti-7rmsoyfng4yww.fr-3.platformsh.site/api/';
 // if(!entrypoint) {
 // }
 entrypoint = entrypoint.substring(0, entrypoint.length - 1);
