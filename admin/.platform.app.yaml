@@ -32,6 +32,7 @@ web:
             expires: 300s
             scripts: true
             allow: false
+            passthru: true
             rules:
                 \.(css|js|gif|jpe?g|png|ttf|eot|woff2?|otf|html|ico|svg?)$:
                     allow: true
@@ -48,7 +49,7 @@ mounts:
   '/build_platform': 'shared:files/build_platform'
   '/.tmp_platformsh': 'shared:files/tmp_platformsh'
   '/build': 'shared:files/build'
-  '/.cache': 'shared:files/.cache'
+  '/node_modules/.cache': 'shared:files/node_modules/.cache'
 
 # The hooks that will be performed when the package is deployed.
 hooks:
