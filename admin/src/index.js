@@ -5,9 +5,9 @@ import App from './App';
 import registerServiceWorker from './registerServiceWorker';
 import reportWebVitals from './reportWebVitals';
 
-// Enables CORS
-const cors = require('cors');
-App.use(cors({ origin: true }));
+// // Enables CORS
+// const cors = require('cors');
+// App.use(cors({ origin: true }));
 
 console.log(App);
 
