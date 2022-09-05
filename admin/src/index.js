@@ -1,7 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import './index.css';
 import App from './App';
 import registerServiceWorker from './registerServiceWorker';
+import reportWebVitals from './reportWebVitals';
 
 // Enables CORS
 const cors = require('cors');
@@ -11,3 +13,4 @@ console.log(App);
 
 ReactDOM.render(<App />, document.getElementById('root'));
 registerServiceWorker();
+reportWebVitals(console.log);
