@@ -33,9 +33,9 @@ relationships:
 web:
     locations:
         "/":
-            root: "build_platform"
+            root: "public"
             index:
-                - "index.html"
+                - "index.php"
             scripts: true
             allow: false
             rules:
