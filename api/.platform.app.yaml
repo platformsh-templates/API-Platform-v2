@@ -39,7 +39,14 @@ web:
             passthru: "/index.php"
             headers:
                 Access-Control-Allow-Origin: "*"
-
+        "/bundles":
+            root: "public"
+            passthru: true
+            expire: 300
+            rules:
+                # Only allow static image files in this location
+                '\.(jpe?g|png|gif|svgz?|ico|bmp|css)$':
+                    allow: true
 # The size of the persistent disk of the application (in MB).
 disk: 2048
 
