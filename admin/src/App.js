@@ -9,7 +9,7 @@ let entrypoint = 'https://master-7rqtwti-7rmsoyfng4yww.fr-3.platformsh.site/api/
 // }
 
 entrypoint = entrypoint.substring(0, entrypoint.length - 1);
-console.log('final entrypoint test', entrypoint);
+console.log('final entrypoint new test', entrypoint);
 
 class App extends Component {
     render() {
