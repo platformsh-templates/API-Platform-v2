@@ -64,6 +64,8 @@ hooks:
     build: |
         bin/console --env=prod assets:install --no-debug
     deploy: |
+        corepack yarn run build
+        corepack yarn encore prod
         bin/console --env=prod doctrine:schema:update --dump-sql
         bin/console --env=prod doctrine:schema:update --force
         bin/console --env=prod cache:clear
