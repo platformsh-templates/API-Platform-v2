@@ -48,13 +48,13 @@ mounts:
   '/build_platform': 'shared:files/build_platform'
   '/.tmp_platformsh': 'shared:files/tmp_platformsh'
   '/build': 'shared:files/build'
-  '/node_modules/.cache': 'shared:files/node_modules/.cache'
+  '/.cache': 'shared:files/.cache'
 
 # The hooks that will be performed when the package is deployed.
 hooks:
     build: |
       set -e
-      corepack yarn install --immutable
+      corepack yarn install --immutable --force
     deploy: |
       corepack yarn run buildenvvar
       corepack yarn run build
