@@ -1,4 +1,4 @@
-// import React, { Component } from 'react';
+import React, { Component } from 'react';
 import { HydraAdmin } from '@api-platform/admin';
 import platformVar from 'platformsh_variables';
 
