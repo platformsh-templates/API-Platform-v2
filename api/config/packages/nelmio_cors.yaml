@@ -14,6 +14,7 @@ nelmio_cors:
 #        forced_allow_origin_value: ~
     paths:
         '^/': ~
+        '^/api/': ~
         '^/api/docs/':
             origin_regex: true
             allow_origin: ['*'] # You probably want to change this regex to match your real domain
