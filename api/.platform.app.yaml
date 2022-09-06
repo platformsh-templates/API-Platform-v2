@@ -62,6 +62,8 @@ mounts:
 # The hooks that will be performed when the package is deployed.
 hooks:
     build: |
+        set -e
+        corepack yarn install --immutable
         bin/console --env=prod assets:install --no-debug
     deploy: |
         yarn encore prod
