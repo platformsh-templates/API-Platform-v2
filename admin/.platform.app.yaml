@@ -49,6 +49,7 @@ mounts:
   '/.tmp_platformsh': 'shared:files/tmp_platformsh'
   '/build': 'shared:files/build'
   '/.cache': 'shared:files/.cache'
+  '/node_modules/.cache': 'shared:files/node_modules/.cache'
 
 # The hooks that will be performed when the package is deployed.
 hooks:
