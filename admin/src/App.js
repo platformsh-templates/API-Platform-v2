@@ -9,7 +9,7 @@ let entrypoint = 'https://master-7rqtwti-7rmsoyfng4yww.fr-3.platformsh.site/api/
 // if(!entrypoint) {
 // }
 entrypoint = entrypoint.substring(0, entrypoint.length - 1);
-console.log('entrypoint tutu', entrypoint);
+console.log('entrypoint toto', entrypoint);
 
 // export default () => (
 //     <HydraAdmin entrypoint="{entrypoint}" />
