@@ -11,7 +11,7 @@ if(!entrypoint) {
 }
 
 entrypoint = entrypoint.substring(0, entrypoint.length - 1);
-console.log('entrypoint', entrypoint);
+console.log('final entrypoint', entrypoint);
 
 class App extends Component {
   render() {
