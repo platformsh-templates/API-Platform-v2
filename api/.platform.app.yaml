@@ -63,10 +63,10 @@ mounts:
 hooks:
     build: |
         set -e
-        corepack yarn install --immutable
+#        corepack yarn install --immutable
         bin/console --env=prod assets:install --no-debug
     deploy: |
-        yarn encore prod
+#        yarn encore prod
         bin/console --env=prod doctrine:schema:update --dump-sql
         bin/console --env=prod doctrine:schema:update --force
         bin/console --env=prod cache:clear
