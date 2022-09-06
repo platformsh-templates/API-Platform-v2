@@ -32,7 +32,7 @@ relationships:
 # The configuration of app when it is exposed to the web .
 web:
     locations:
-        "/api":
+        "/":
             root: "public"
             passthru: "/index.php"
             index:
@@ -41,8 +41,7 @@ web:
             allow: true
             headers:
                 Access-Control-Allow-Origin: "*"
-
-        "/":
+        "/api":
             root: "public"
             passthru: "/index.php"
             index:
