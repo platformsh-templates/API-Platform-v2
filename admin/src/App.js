@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
 import { HydraAdmin } from '@api-platform/admin';
-import platformVar from 'platformsh_variables';
+// import platformVar from 'platformsh_variables';
+//
+// let entrypoint = Object.keys(platformVar).find(url => url.endsWith('/api/'));
 
-let entrypoint = Object.keys(platformVar).find(url => url.endsWith('/api/'));
+// console.log(Object.keys(platformVar));
 
-console.log(Object.keys(platformVar));
-
-if(!entrypoint) {
-  entrypoint = 'https://master-7rqtwti-7rmsoyfng4yww.fr-3.platformsh.site/api/';
-}
+let entrypoint = 'https://master-7rqtwti-7rmsoyfng4yww.fr-3.platformsh.site/api/';
+// if(!entrypoint) {
+// }
 
 entrypoint = entrypoint.substring(0, entrypoint.length - 1);
 console.log('final entrypoint test', entrypoint);
