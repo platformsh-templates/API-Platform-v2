@@ -12,7 +12,9 @@ framework:
         cookie_samesite: lax
         storage_factory_id: session.storage.factory.native
     assets:
-        base_path: /api
+        assets_base_urls:
+            http: ['/api']
+            ssl: ['/api']
     #esi: true
     fragments: ~
     php_errors:
