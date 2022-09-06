@@ -13,18 +13,25 @@ nelmio_cors:
         hosts: []
 #        forced_allow_origin_value: ~
     paths:
-        '^/': ~
-        '^/api/':
+        '^/':
             origin_regex: true
-            allow_origin: ['*'] # You probably want to change this regex to match your real domain
+            allow_origin: ['https://master-7rqtwti-7rmsoyfng4yww.fr-3.platformsh.site'] # You probably want to change this regex to match your real domain
             allow_methods: ['GET', 'OPTIONS', 'POST', 'PUT', 'PATCH', 'DELETE']
             allow_headers: ['Content-Type', 'Authorization']
-            expose_headers: [ 'Content-Disposition', 'Content-Length', 'Link' ]
+            expose_headers: [ 'Link' ]
+            max_age: 3600
+
+        '^/api/':
+            origin_regex: true
+            allow_origin: ['https://master-7rqtwti-7rmsoyfng4yww.fr-3.platformsh.site'] # You probably want to change this regex to match your real domain
+            allow_methods: ['GET', 'OPTIONS', 'POST', 'PUT', 'PATCH', 'DELETE']
+            allow_headers: ['Content-Type', 'Authorization']
+            expose_headers: [ 'Link' ]
             max_age: 3600
         '^/api/docs/':
             origin_regex: true
-            allow_origin: ['*'] # You probably want to change this regex to match your real domain
+            allow_origin: ['https://master-7rqtwti-7rmsoyfng4yww.fr-3.platformsh.site'] # You probably want to change this regex to match your real domain
             allow_methods: ['GET', 'OPTIONS', 'POST', 'PUT', 'PATCH', 'DELETE']
             allow_headers: ['Content-Type', 'Authorization']
-            expose_headers: [ 'Content-Disposition', 'Content-Length', 'Link' ]
+            expose_headers: [ 'Link' ]
             max_age: 3600
