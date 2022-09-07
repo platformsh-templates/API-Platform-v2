@@ -2,12 +2,12 @@ import React, { Component } from 'react';
 import { HydraAdmin } from '@api-platform/admin';
 import platformVar from 'platformsh_variables';
 
-let entrypoint = Object.keys(platformVar).find(url => url.startsWith('https://api.'));
+let entrypoint = Object.keys(platformVar).find(url => url.startsWith('https://'));
 
 console.log(entrypoint, Object.keys(platformVar));
 
 // const currentURL = window.location.href
-// let entrypoint = currentURL + 'api/'
+entrypoint = entrypoint + 'api/'
 // console.log('entrypoint from current url', entrypoint)
 
 if(!entrypoint) { // default entrypoint
