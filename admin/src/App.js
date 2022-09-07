@@ -3,9 +3,12 @@ import { HydraAdmin } from '@api-platform/admin';
 import platformVar from 'platformsh_variables';
 
 
-let entrypoint = Object.keys(platformVar).find(url => url.endsWith('/api'));
+let entrypoint_test = Object.keys(platformVar).find(url => url.endsWith('/api'));
 
-console.log(entrypoint, Object.keys(platformVar));
+console.log(entrypoint_test, Object.keys(platformVar));
+
+const currentURL = window.location.href
+let entrypoint = currentURL + 'api/'
 
 if(!entrypoint) {
     entrypoint = 'https://master-7rqtwti-7rmsoyfng4yww.fr-3.platformsh.site/api/';
