@@ -4,8 +4,9 @@ nelmio_cors:
     defaults:
         origin_regex: true
 #        allow_credentials: false
+        #TODO make it dynamic via config
 #        allow_origin: ['%cors_allow_origin%']
-        allow_origin: ['*']
+        allow_origin: ['.*7rmsoyfng4yww.fr-3.platformsh.site']
         allow_methods: [ 'GET', 'OPTIONS', 'POST', 'PUT', 'PATCH', 'DELETE' ]
         allow_headers: [ 'Content-Type', 'Authorization' ]
         expose_headers: [ 'Content-Disposition', 'Content-Length', 'Link' ]
@@ -15,14 +16,14 @@ nelmio_cors:
     paths:
         '^/':
             origin_regex: true
-            allow_origin: [ '*' ] # You probably want to change this regex to match your real domain
+            allow_origin: ['.*7rmsoyfng4yww.fr-3.platformsh.site']
             allow_methods: [ 'GET', 'OPTIONS', 'POST', 'PUT', 'PATCH', 'DELETE' ]
             allow_headers: [ 'Content-Type', 'Authorization' ]
             expose_headers: [ 'Content-Disposition', 'Content-Length', 'Link' ]
             max_age: 3600
         '^/api':
             origin_regex: true
-            allow_origin: ['*'] # You probably want to change this regex to match your real domain
+            allow_origin: ['.*7rmsoyfng4yww.fr-3.platformsh.site']
             allow_methods: ['GET', 'OPTIONS', 'POST', 'PUT', 'PATCH', 'DELETE']
             allow_headers: ['Content-Type', 'Authorization']
             expose_headers: [ 'Content-Disposition', 'Content-Length', 'Link' ]
@@ -30,7 +31,7 @@ nelmio_cors:
 #
 #        '^/api/':
 #            origin_regex: true
-#            allow_origin: ['*'] # You probably want to change this regex to match your real domain
+        allow_origin: ['*.7rmsoyfng4yww.fr-3.platformsh.site']
 #            allow_methods: ['GET', 'OPTIONS', 'POST', 'PUT', 'PATCH', 'DELETE']
 #            allow_headers: ['Content-Type', 'Authorization']
 #            expose_headers: [ 'Content-Disposition', 'Content-Length', 'Link' ]
