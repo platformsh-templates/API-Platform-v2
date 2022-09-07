@@ -13,8 +13,8 @@ https://{default}/:
   upstream: admin:http
   id: admin
 
-https://api.{default}/:
-    type: upstream
-    # the first part should be your project name
-    upstream: "api:http"
-    id: api
+https://api.{default}/api:
+  type: upstream
+  # the first part should be your project name
+  upstream: "api:http"
+  id: api
