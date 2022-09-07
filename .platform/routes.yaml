@@ -17,3 +17,8 @@ https://{default}/api:
     # the first part should be your project name
     upstream: "api:http"
     id: api
+https://{default}/api/:
+  type: upstream
+  # the first part should be your project name
+  upstream: "api:http"
+  id: api
