@@ -1,20 +1,24 @@
 import React, { Component } from 'react';
 import { HydraAdmin } from '@api-platform/admin';
-import platformVar from 'platformsh_variables';
+// import platformVar from 'platformsh_variables';
 
-let entrypoint = Object.keys(platformVar).find(url => url.startsWith('https://api.'));
+let entrypoint = 'https://test-t6dnbai-7rmsoyfng4yww.fr-3.platformsh.site/api/';
 
-console.log(entrypoint, Object.keys(platformVar));
+// let entrypoint = Object.keys(platformVar).find(url => url.startsWith('https://api.'));
 
-// const currentURL = window.location.href
-entrypoint = entrypoint + 'api/'
-// console.log('entrypoint from current url', entrypoint)
+// console.log(entrypoint, Object.keys(platformVar));
 
-if(!entrypoint) { // default entrypoint
-    entrypoint = 'https://api.fix-502-errors-wivvlli-7rmsoyfng4yww.fr-3.platformsh.site/api/';
-}
-entrypoint = entrypoint.substring(0, entrypoint.length - 1);
-console.log('final entrypoint test6', entrypoint);
+// // const currentURL = window.location.href
+// entrypoint = entrypoint + 'api/'
+// // console.log('entrypoint from current url', entrypoint)
+
+// if(!entrypoint) { // default entrypoint
+//     entrypoint = 'https://api.fix-502-errors-wivvlli-7rmsoyfng4yww.fr-3.platformsh.site/api/';
+// }
+// entrypoint = entrypoint.substring(0, entrypoint.length - 1);
+// console.log('final entrypoint test6', entrypoint);
+
+
 
 class App extends Component {
     render() {

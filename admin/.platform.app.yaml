@@ -56,7 +56,7 @@ hooks:
     build: |
       set -e
       corepack yarn install --immutable --force
-    deploy: |
+    post_deploy: |
       corepack yarn run buildenvvar
       corepack yarn run build --force
 #      corepack yarn start
