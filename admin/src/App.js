@@ -1,10 +1,12 @@
 import React, { Component } from 'react';
 import { HydraAdmin } from '@api-platform/admin';
-// import platformVar from 'platformsh_variables';
+import platformVar from 'platformsh_variables';
 
-let entrypoint = 'https://test-t6dnbai-7rmsoyfng4yww.fr-3.platformsh.site/api';
+// let entrypoint = 'https://test-t6dnbai-7rmsoyfng4yww.fr-3.platformsh.site/api';
 
-// let entrypoint = Object.keys(platformVar).find(url => url.startsWith('https://api.'));
+let entrypoint = Object.keys(platformVar).find(url => url.startsWith('https://api.'));
+
+console.log(platformVar);
 
 // console.log(entrypoint, Object.keys(platformVar));
 
