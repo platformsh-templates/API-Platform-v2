@@ -26,7 +26,7 @@ resources:
 web:
     locations:
         "/":
-            root: "build_platform"
+            root: "build"
             index:
                 - "index.html"
             expires: 300s
@@ -56,7 +56,7 @@ hooks:
     build: |
       set -e
       corepack yarn install --immutable --force
-    deploy: |
-      corepack yarn run buildenvvar
+    post_deploy: |
+      # corepack yarn run buildenvvar
       corepack yarn run build --force
 #      corepack yarn start
