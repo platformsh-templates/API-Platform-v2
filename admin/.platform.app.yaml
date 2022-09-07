@@ -55,8 +55,8 @@ mounts:
 hooks:
     build: |
       set -e
-      corepack yarn install --immutable --force
+      corepack yarn install --immutable
     deploy: |
       corepack yarn run buildenvvar
-#      corepack yarn run build
+      corepack yarn run build
 #      corepack yarn start

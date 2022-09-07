@@ -32,23 +32,11 @@ relationships:
 # The configuration of app when it is exposed to the web .
 web:
     locations:
-        "/api":
-            root: "public"
-            passthru: "/index.php"
-            index:
-                - index.php
-            scripts: true
-            allow: true
-            headers:
-                Access-Control-Allow-Origin: "*"
-
         "/":
+            # The public directory of the app, relative to its root.
             root: "public"
+            # The front-controller script to send non-static requests to.
             passthru: "/index.php"
-            index:
-                - index.php
-            scripts: true
-            allow: true
             headers:
                 Access-Control-Allow-Origin: "*"
 
@@ -60,6 +48,7 @@ mounts:
     "/var/cache": "shared:files/cache"
     "/var/log": "shared:files/log"
     "/var/sessions": "shared:files/sessions"
+
 
 # The hooks that will be performed when the package is deployed.
 hooks:

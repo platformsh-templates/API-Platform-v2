@@ -14,7 +14,7 @@ framework:
     assets:
         base_path: /api
     #esi: true
-    fragments: ~
+    #fragments: true
     php_errors:
         log: true
 
