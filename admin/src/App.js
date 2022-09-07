@@ -8,7 +8,7 @@ let entrypoint = 'https://master-7rqtwti-7rmsoyfng4yww.fr-3.platformsh.site/api/
 // if(!entrypoint) {
 // }
 
-entrypoint = entrypoint.substring(0, entrypoint.length - 1);
+// entrypoint = entrypoint.substring(0, entrypoint.length - 1);
 console.log('final entrypoint new test', entrypoint);
 
 class App extends Component {
