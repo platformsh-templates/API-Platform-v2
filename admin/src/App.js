@@ -5,6 +5,8 @@ import platformVar from 'platformsh_variables';
 
 let entrypoint = Object.keys(platformVar).find(url => url.endsWith('/api'));
 
+console.log(entrypoint, Object.keys(platformVar));
+
 if(!entrypoint) {
     entrypoint = 'https://master-7rqtwti-7rmsoyfng4yww.fr-3.platformsh.site/api/';
 }
