@@ -11,6 +11,7 @@ https://{default}/:
     enabled: false
   type: upstream
   upstream: admin:http
+  id: admin
 
 https://{default}/api/:
     type: upstream

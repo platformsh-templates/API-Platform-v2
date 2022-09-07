@@ -10,22 +10,22 @@ nelmio_cors:
         allow_headers: [ 'Content-Type', 'Authorization' ]
         expose_headers: [ 'Content-Disposition', 'Content-Length', 'Link' ]
         max_age: 3600
-        hosts: []
-        forced_allow_origin_value: ~
+#        hosts: []
+#        forced_allow_origin_value: ~
     paths:
-#        '^/': ~
-        '^/':
-            origin_regex: true
-            allow_origin: ['*'] # You probably want to change this regex to match your real domain
-            allow_methods: ['GET', 'OPTIONS', 'POST', 'PUT', 'PATCH', 'DELETE']
-            allow_headers: ['Content-Type', 'Authorization']
-            expose_headers: [ 'Content-Disposition', 'Content-Length', 'Link' ]
-            max_age: 3600
-
-        '^/api':
-            origin_regex: true
-            allow_origin: ['*'] # You probably want to change this regex to match your real domain
-            allow_methods: ['GET', 'OPTIONS', 'POST', 'PUT', 'PATCH', 'DELETE']
-            allow_headers: ['Content-Type', 'Authorization']
-            expose_headers: [ 'Content-Disposition', 'Content-Length', 'Link' ]
-            max_age: 3600
+        '^/': ~
+#        '^/':
+#            origin_regex: true
+#            allow_origin: ['*'] # You probably want to change this regex to match your real domain
+#            allow_methods: ['GET', 'OPTIONS', 'POST', 'PUT', 'PATCH', 'DELETE']
+#            allow_headers: ['Content-Type', 'Authorization']
+#            expose_headers: [ 'Content-Disposition', 'Content-Length', 'Link' ]
+#            max_age: 3600
+#
+#        '^/api':
+#            origin_regex: true
+#            allow_origin: ['*'] # You probably want to change this regex to match your real domain
+#            allow_methods: ['GET', 'OPTIONS', 'POST', 'PUT', 'PATCH', 'DELETE']
+#            allow_headers: ['Content-Type', 'Authorization']
+#            expose_headers: [ 'Content-Disposition', 'Content-Length', 'Link' ]
+#            max_age: 3600
