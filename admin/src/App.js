@@ -10,6 +10,10 @@ if(!entrypoint) { // default entrypoint to current url
 entrypoint = entrypoint + '/api';
 
 class App extends Component {
+    componentDidMount(){
+        document.title = "Admin API Platform.sh"
+    }
+
     render() {
         return <HydraAdmin entrypoint={entrypoint}/>;
     }
