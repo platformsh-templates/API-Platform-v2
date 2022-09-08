@@ -1,7 +1,11 @@
+parameters:
+    default_title: Hello API Platform
+
 api_platform:
     mapping:
         paths: ['%kernel.project_dir%/src/Entity']
-    title: Hello API Platform
+
+    title: '%env(string:default:default_title:API_SITE_NAME)%'
     version: 1.0.0
     patch_formats:
         json: ['application/merge-patch+json']

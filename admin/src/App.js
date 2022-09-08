@@ -11,7 +11,7 @@ entrypoint = entrypoint + '/api';
 
 class App extends Component {
     componentDidMount(){
-        document.title = "Admin API Platform.sh"
+        document.title = process.env.ADMIN_SITE_NAME || "Admin API Platform.sh";
     }
 
     render() {
