@@ -51,7 +51,6 @@ mounts:
     "/var/log": "shared:files/log"
     "/var/sessions": "shared:files/sessions"
 
-
 # The hooks that will be performed when the package is deployed.
 hooks:
     build: |

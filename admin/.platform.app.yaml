@@ -18,10 +18,6 @@ resources:
   base_memory: 1024
   memory_ratio: 1024
 
-#dependencies:
-#  nodejs:
-#    yarn: "*"
-
 # The configuration of app when it is exposed to the web.
 web:
     locations:
@@ -54,9 +50,8 @@ mounts:
 # The hooks that will be performed when the package is deployed.
 hooks:
     build: |
-      set -e
+      set -eu
       corepack yarn install --immutable --force
     post_deploy: |
       corepack yarn run buildenvvar
       corepack yarn run build --force
-#      corepack yarn start
