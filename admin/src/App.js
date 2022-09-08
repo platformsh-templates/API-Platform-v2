@@ -4,6 +4,9 @@ import platformVar from 'platformsh_variables';
 
 // let entrypoint = 'https://master-7rqtwti-7rmsoyfng4yww.fr-3.platformsh.site/api';
 
+console.log('public url', process.env.PUBLIC_URL)
+
+
 let entrypoint = Object.keys(platformVar).find(url => url.startsWith('https://'));
 entrypoint = entrypoint + 'api/'
 
