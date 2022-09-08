@@ -7,7 +7,7 @@ if(!entrypoint) { // default entrypoint to current url
     entrypoint = window.location.href
 }
 
-entrypoint = entrypoint + 'api'
+entrypoint = entrypoint + '/api'
 console.log('final entrypoint test6', entrypoint);
 
 class App extends Component {
