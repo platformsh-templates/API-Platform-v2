@@ -15,19 +15,17 @@
 <a href="https://community.platform.sh"><strong>Join our community</strong></a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
 <a href="https://docs.platform.sh"><strong>Documentation</strong></a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
 <a href="https://platform.sh/blog"><strong>Blog</strong></a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-#TODO
 <a href="https://github.com/flovntp/api-platform-sh/issues/new?assignees=&labels=bug&template=bug_report.yml"><strong>Report a bug</strong></a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-#TODO
 <a href="https://github.com/flovntp/api-platform-sh/issues/new?assignees=&labels=feature+request&template=improvements.yml"><strong>Request a feature</strong></a>
 <br /><br />
 </p>
 
 <p align="center">
 <a href="https://github.com/flovntp/api-platform-sh/issues">
-#TODO<img src="https://img.shields.io/github/issues/flovntp/api-platform-sh.svg?style=for-the-badge&labelColor=f4f2f3&color=ffd9d9&label=Issues" alt="Open issues" />
+<img src="https://img.shields.io/github/issues/flovntp/api-platform-sh.svg?style=for-the-badge&labelColor=f4f2f3&color=ffd9d9&label=Issues" alt="Open issues" />
 </a>&nbsp&nbsp
 <a href="https://github.com/flovntp/api-platform-sh/pulls">
-#TODO <img src="https://img.shields.io/github/issues-pr/flovntp/api-platform-sh.svg?style=for-the-badge&labelColor=f4f2f3&color=ffd9d9&label=Pull%20requests" alt="Open PRs" />
+<img src="https://img.shields.io/github/issues-pr/flovntp/api-platform-sh.svg?style=for-the-badge&labelColor=f4f2f3&color=ffd9d9&label=Pull%20requests" alt="Open PRs" />
 </a>&nbsp&nbsp
 
 <a href="https://console.platform.sh/projects/create-project?template=https://raw.githubusercontent.com/flovntp/api-platform-sh-metadata/main/template-metadata-sf6.0-php8.1-webapp.yaml&utm_content=symfonycorp&utm_source=github&utm_medium=button&utm_campaign=deploy_on_platform">
