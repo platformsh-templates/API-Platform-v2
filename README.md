@@ -28,7 +28,7 @@
 <img src="https://img.shields.io/github/issues-pr/flovntp/api-platform-sh.svg?style=for-the-badge&labelColor=f4f2f3&color=ffd9d9&label=Pull%20requests" alt="Open PRs" />
 </a>&nbsp&nbsp
 
-<a href="https://console.platform.sh/projects/create-project?template=https://raw.githubusercontent.com/flovntp/api-platform-sh/blob/main/.platform/metadata/api-platform-php8.1.template.yaml&utm_content=symfonycorp&utm_source=github&utm_medium=button&utm_campaign=deploy_on_platform">
+<a href="https://console.platform.sh/projects/create-project?template=https://raw.githubusercontent.com/flovntp/api-platform-sh/main/.platform/metadata/api-platform-php8.1.template.yaml&utm_content=symfonycorp&utm_source=github&utm_medium=button&utm_campaign=deploy_on_platform">
     <img src="https://platform.sh/images/deploy/deploy-button-lg-blue.svg" alt="Deploy on Platform.sh" width="175px">
 </a>
 </p>
@@ -115,7 +115,7 @@
 ### Quickstart
 
 <p align="center">
-<a href="https://console.platform.sh/projects/create-project?template=https://raw.githubusercontent.com/flovntp/api-platform-sh/blob/main/.platform/metadata/api-platform-php8.1.template.yaml&utm_content=symfonycorp&utm_source=github&utm_medium=button&utm_campaign=deploy_on_platform">
+<a href="https://console.platform.sh/projects/create-project?template=https://raw.githubusercontent.com/flovntp/api-platform-sh/main/.platform/metadata/api-platform-php8.1.template.yaml&utm_content=symfonycorp&utm_source=github&utm_medium=button&utm_campaign=deploy_on_platform">
     <img src="https://platform.sh/images/deploy/deploy-button-lg-blue.svg" alt="Deploy on Platform.sh" width="175px">
 </a>
 </p>
