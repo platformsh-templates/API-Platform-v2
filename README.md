@@ -343,105 +343,67 @@ Then you can clone a copy of it locally with `TODO git clone git@github.com:YOUR
  
 
 
-[comment]: <> (### Local development)
+### Local development
 
-[comment]: <> (This section provides instructions for running the `Symfony` template locally, connected to a live database instance on an active Platform.sh environment.)
+This section provides instructions for running the `API Platform` template locally, connected to a local database instance.
 
-[comment]: <> (In all cases for developing with Platform.sh, it's important to develop on an isolated environment - do not connect to data on your production environment when developing locally.)
+In all cases for developing with Platform.sh, it's important to develop on an isolated environment - do not connect to data on your production environment when developing locally.
 
-[comment]: <> (Each of the options below assume that you have already deployed this template to Platform.sh, as well as the following starting commands:)
+Each of the options below assume that you have already deployed this template to Platform.sh, as well as the following starting commands:
 
-[comment]: <> (```bash)
+```bash
 
-[comment]: <> ($ platform get PROJECT_ID)
+$ platform get PROJECT_ID
 
-[comment]: <> ($ cd project-name)
+$ cd project-name
 
-[comment]: <> ($ platform environment:branch updates)
+$ platform environment:branch updates
 
-[comment]: <> (```)
+```
 
-[comment]: <> (<details>)
+<details>
 
-[comment]: <> (<summary>Symfony: using Symfony Server</summary><br />)
+<summary>API Platform: using Symfony Server</summary><br />
 
-[comment]: <> (Please follow steps described <a href="https://symfony.com/doc/current/setup/symfony_server.html">in the doc</a>)
+In general, the steps are as follows:
 
-[comment]: <> (</details>)
+1. Start the API component with those steps, assuming that you're at the root of your multi-app project.
 
-[comment]: <> (<details>)
+   1. `cd ./api`
+   
+   1. Install the <a href="https://symfony.com/download">Symfony CLI</a>
+   
+   1. `symfony composer install`
+   
+   1. check that your ./api/.env file contains a valid `DATABASE_URL` to let Symfony connect to your database
+   
+   1. `symfony console doctrine:database:create`
+   
+   1. `symfony console doctrine:schema:create` (add option `--dump-sql` to check if table `greeting` would be created using SQL request)
+   
+   1. `symfony server:start -d` (you will have a prompt giving the local url to access and add `/api` to display your swagger interface)
+   
+   1. et voilà
 
-[comment]: <> (<summary>Symfony: using ddev</summary><br />)
 
-[comment]: <> (ddev provides an integration with Platform.sh that makes it simple to develop Drupal locally. Check the [providers documentation]&#40;https://ddev.readthedocs.io/en/latest/users/providers/platform/&#41; for the most up-to-date information.)
+> **Note:**
+> if symfony server does not start your app using port 8000, please change `REACT_APP_PUBLIC_URL` from `./admin/.env` file accordingly
 
-[comment]: <> (In general, the steps are as follows:)
+2. Start the admin component with those steps
+   
+   1. `cd ../admin` (assuming that you're in the `./api` folder)
+   
+   1. `yarn install`
 
-[comment]: <> (1. [Install ddev]&#40;https://ddev.readthedocs.io/en/stable/#installation&#41;.)
+   1. `yarn start`
+   
+   1. et voilà, you can access the admin interface following this url <a href="http://localhost:3000/" target="_blank">http://localhost:3000</a> (if not open automatically)
+   
+</details>
 
-[comment]: <> (1. A configuration file has already been provided at `.ddev/providers/platform.yaml`, so you should not need to run `ddev config`.)
 
-[comment]: <> (1. [Retrieve an API token]&#40;https://docs.platform.sh/development/cli/api-tokens.html#get-a-token&#41; for your organization via the management console.)
-
-[comment]: <> (1. Update your dedev global configuration file to use the token you've just retrieved:)
-
-[comment]: <> (    ```yaml)
-
-[comment]: <> (    web_environment:)
-
-[comment]: <> (    - PLATFORMSH_CLI_TOKEN=abcdeyourtoken`)
-
-[comment]: <> (    ```)
-
-[comment]: <> (1. Run `ddev restart`.)
-
-[comment]: <> (1. Get your project ID with `platform project:info`. If you have not already connected your local repo with the project &#40;as is the case with a source integration, by default&#41;, you can run `platform project:list` to locate the project ID, and `platform project:set-remote PROJECT_ID` to configure Platform.sh locally.)
-
-[comment]: <> (1. Update the `.ddev/providers/platform.yaml` file for your current setup:)
-
-[comment]: <> (    ```yaml)
-
-[comment]: <> (    environment_variables:)
-
-[comment]: <> (    project_id: PROJECT_ID)
-
-[comment]: <> (    environment: CURRENT_ENVIRONMENT)
-
-[comment]: <> (    application: mySymfonyApp)
-
-[comment]: <> (    ```)
-
-[comment]: <> (1. Get the current environment's data with `ddev pull platform`.)
-
-[comment]: <> (1. When you have finished with your work, run `ddev stop` and `ddev poweroff`.)
-
-[comment]: <> (</details>)
-
-[comment]: <> (<details>)
-
-[comment]: <> (<summary>Symfony: using Lando</summary><br />)
-
-[comment]: <> (Lando supports PHP applications [configured to run on Platform.sh]&#40;https://docs.platform.sh/development/local/lando.html&#41;, and pulls from the same container registry Platform.sh uses on your remote environments during your local builds through its own [recipe and plugin]&#40;https://docs.lando.dev/platformsh/&#41;.)
-
-[comment]: <> (1. [Install Lando]&#40;https://docs.lando.dev/getting-started/installation.html&#41;.)
-
-[comment]: <> (1. Make sure Docker is already running - Lando will attempt to start Docker for you, but it's best to have it running in the background before beginning.)
-
-[comment]: <> (1. Start your apps and services with the command `lando start`.)
-
-[comment]: <> (1. To get up-to-date data from your Platform.sh environment &#40;[services *and* mounts]&#40;https://docs.lando.dev/platformsh/sync.html#pulling&#41;&#41;, run the command `lando pull`.)
-
-[comment]: <> (1. If at any time you have updated your Platform.sh configuration files, run the command `lando rebuild`.)
-
-[comment]: <> (1. When you have finished with your work, run `lando stop` and `lando poweroff`.)
-
-[comment]: <> (</details>)
-
-[comment]: <> (> **Note:**)
-
-[comment]: <> (>)
-
-[comment]: <> (> For many of the steps above, you may need to include the CLI flags `-p PROJECT_ID` and `-e ENVIRONMENT_ID` if you are not in the project directory or if the environment is associated with an existing pull request.)
+> **Note:**
+> For many of the steps above, you may need to include the CLI flags `-p PROJECT_ID` and `-e ENVIRONMENT_ID` if you are not in the project directory or if the environment is associated with an existing pull request.
 
 
 ### Deploying to Platform.sh
@@ -645,19 +607,6 @@ $ platform mount:upload -e main --mount private --source ./private
 Note that `rsync` is picky about its trailing slashes, so be sure to include those.
 
 </details>
-
-<h2>What's next?</h2>
-  <p>
-   Your project is already deployed in production. To start working on it locally:
-   <ol>
-       <li>Clone it in a local directory via <code>git clone XXXX some-dir/</code></li>
-       <li>Install Docker and start services via <code>docker-compose up -d</code></li>
-       <li>Install the <a href="https://symfony.com/download">Symfony CLI</a> and start a web server via <code>symfony server:start -d</code></li>
-       <li>Commit changes, test them, push the new code to your favorite Git hosting</li>
-       <li>Deploy via <code>symfony deploy</code></li>
-   </ol>
-  </p>
-
 
 With your application now deployed on Platform.sh, things get more interesting.
 Run the command `platform environment:branch new-feature` for your project, or open a trivial pull request off of your current branch.
