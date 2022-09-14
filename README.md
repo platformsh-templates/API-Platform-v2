@@ -6,7 +6,7 @@
 </a>
 </p>
 
-<h1 align="center">Deploy API Platform api and API Platform admin (React) on Platform.sh</h1>
+<h1 align="center">Deploy API Platform on Platform.sh</h1>
 
 <p align="center">
 <strong>Contribute, request a feature, or check out our resources</strong>
@@ -101,7 +101,8 @@
 
 [comment]: <> (</p>)
 
-###Features
+### Features
+
 - PHP 8.1
 - PostgreSQL 13
 - Composer-based build
@@ -126,8 +127,8 @@
 Clone the GitHub repository and push its content to your Platform.sh project:
 
 ```
-git clone git@github.com:platformsh/platformsh-example-api-platform-reactjs.git
-cd platformsh-example-api-platform-reactjs/
+git clone git@github.com:platformsh-templates/api-platform-api-admin.git
+cd api-platform-api-admin
 git remote add platform [project-id]@git.[region].platform.sh:[project-id].git
 git push platform main
 ```
@@ -155,8 +156,6 @@ You can also quickly recreate this project locally with the following command:
 ```bash
 # composer create-project platformsh-templates/api-platform-api-admin:main -s dev
 ```
-
-TODO add this template on packagist
 
 > **Note:**
 >
