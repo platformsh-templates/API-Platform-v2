@@ -150,7 +150,7 @@ This will automatically create a new project and initialize the repository for y
 
 
 
-
+<!-- 
 You can also quickly recreate this project locally with the following command:
 
 ```bash
@@ -160,6 +160,7 @@ You can also quickly recreate this project locally with the following command:
 > **Note:**
 >
 > Platform.sh templates prioritize upstream release versions over our own. Despite this, we update template dependencies on a scheduled basis independent of those upstreams. <br>Because of this, template repos do not contain releases. This may change in the future, but until then the `-s dev` flag is necessary to use `composer create-project`.
+ -->
 
 #### Other deployment options
 
