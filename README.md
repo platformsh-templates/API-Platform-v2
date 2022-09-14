@@ -150,12 +150,13 @@ This will automatically create a new project and initialize the repository for y
 
 
 
-TODO You can also quickly recreate this project locally with the following command:
+You can also quickly recreate this project locally with the following command:
 
 ```bash
 # composer create-project platformsh-templates/api-platform-api-admin:main -s dev
 ```
 
+TODO add this template on packagist
 
 > **Note:**
 >
@@ -171,8 +172,7 @@ git clone https://github.com/platformsh-templates/api-platform-api-admin.git
 
 If you're trying to deploy from GitHub, you can generate a copy of this repository first in your own namespace by clicking the [Use this template](https://github.com/platformsh-templates/api-platform-api-admin/generate) button at the top of this page.
 
-Then you can clone a copy of it locally with `TODO git clone git@github.com:YOUR_NAMESPACE/platformsh-symfony-template.git`.
-
+Then you can clone a copy of it locally with `git clone git@github.com:YOUR_NAMESPACE/api-platform-api-admin.git`.
 
 <details>
 <summary>Deploy directly to Platform.sh from the command line</summary>
@@ -363,15 +363,19 @@ $ platform environment:branch updates
 
 <details>
 
-<summary>API Platform: using Symfony Server</summary><br />
-
+<summary>API Platform: using Symfony Server</summary>
 In general, the steps are as follows:
 
-1. Start the API component with those steps, assuming that you're at the root of your multi-app project.
+1. if you didn't get your Platform project yet, `git clone git@github.com:platformsh-templates/api-platform-api-admin.git api-platform` 
+(or your own repo if you already created a fork)
+
+2. `cd ./api-platform`
+
+3. Start the API component with those steps:
 
    1. `cd ./api`
    
-   1. Install the <a href="https://symfony.com/download">Symfony CLI</a>
+   2. Install the <a href="https://symfony.com/download" target="_blank">Symfony CLI</a>
    
    1. `symfony composer install`
    
@@ -379,17 +383,16 @@ In general, the steps are as follows:
    
    1. `symfony console doctrine:database:create`
    
-   1. `symfony console doctrine:schema:create` (add option `--dump-sql` to check if table `greeting` would be created using SQL request)
+   1. `symfony console doctrine:schema:create` (add option `--dump-sql` to check if table `greeting` would be created)
    
-   1. `symfony server:start -d` (you will have a prompt giving the local url to access and add `/api` to display your swagger interface)
+   1. `symfony server:start -d` (you will have a prompt giving the generated local url and please add `/api` to display your swagger interface, showing entity Greeting CRUD option)
    
    1. et voilà
-
-
+   
 > **Note:**
 > if symfony server does not start your app using port 8000, please change `REACT_APP_PUBLIC_URL` from `./admin/.env` file accordingly
 
-2. Start the admin component with those steps
+3. Start the admin component with those steps
    
    1. `cd ../admin` (assuming that you're in the `./api` folder)
    
@@ -401,10 +404,8 @@ In general, the steps are as follows:
    
 </details>
 
-
 > **Note:**
 > For many of the steps above, you may need to include the CLI flags `-p PROJECT_ID` and `-e ENVIRONMENT_ID` if you are not in the project directory or if the environment is associated with an existing pull request.
-
 
 ### Deploying to Platform.sh
 
@@ -660,7 +661,7 @@ php bin/console cache:pool:clear cache.redis
 
 ### Blackfire.io: creating a Continuous Observability Strategy
 
-This template includes a starting [`.blackfire.yml`](.blackfire.yml) file that can be used to enable [Application Performance Monitoring](https://blackfire.io/docs/monitoring-cookbooks/index), [Profiling](https://blackfire.io/docs/profiling-cookbooks/index), [Builds](https://blackfire.io/docs/builds-cookbooks/index) and [Performance Testing](https://blackfire.io/docs/testing-cookbooks/index) on your project. Platform.sh comes with Blackfire pre-installed on application containers, and [setting up requires minimal configuration](https://docs.platform.sh/integrations/observability/blackfire.html).
+This template includes a starting [`.blackfire.yml`](.blackfire.yml) file in the api folder that can be used to enable [Application Performance Monitoring](https://blackfire.io/docs/monitoring-cookbooks/index), [Profiling](https://blackfire.io/docs/profiling-cookbooks/index), [Builds](https://blackfire.io/docs/builds-cookbooks/index) and [Performance Testing](https://blackfire.io/docs/testing-cookbooks/index) on your project. Platform.sh comes with Blackfire pre-installed on application containers, and [setting up requires minimal configuration](https://docs.platform.sh/integrations/observability/blackfire.html).
 
 * [What is Blackfire?](https://blackfire.io/docs/introduction)
 * [Configuring Blackfire.io on a Platform.sh project](https://docs.platform.sh/integrations/observability/blackfire.html)
@@ -671,15 +672,11 @@ This template includes a starting [`.blackfire.yml`](.blackfire.yml) file that c
 * [Using Builds](https://blackfire.io/docs/builds-cookbooks/index)
 * [Configuring Integrations](https://blackfire.io/docs/integrations/index)
 
-
 ### Resources
 
-
-- [API Platform](https://www.drupal.org/)
-
-[comment]: <> (TODO - [Drupal 9 on Platform.sh]&#40;https://docs.platform.sh/guides/drupal9/deploy.html&#41;)
+- [API Platform API component](https://api-platform.com/docs/core/getting-started/)
+- [API Platform Admin component](https://api-platform.com/docs/admin/getting-started/)
 - [Platform.sh PHP documentation](https://docs.platform.sh/languages/php.html)
-
 
 ### Contact
 
