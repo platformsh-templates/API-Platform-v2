@@ -13,3 +13,5 @@ export CORS_ALLOW_ORIGIN=^https://.*$(echo $PLATFORM_PROJECT)\.fr-3.platformsh.s
 
 # Admin Site Name
 export API_SITE_NAME="API Platform.sh"
+
+export APP_SECRET=$(echo $PLATFORM_PROJECT_ENTROPY)

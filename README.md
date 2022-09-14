@@ -27,7 +27,8 @@
 <a href="https://github.com/flovntp/api-platform-sh/pulls">
 <img src="https://img.shields.io/github/issues-pr/flovntp/api-platform-sh.svg?style=for-the-badge&labelColor=f4f2f3&color=ffd9d9&label=Pull%20requests" alt="Open PRs" />
 </a>&nbsp&nbsp
-
+</p>
+<p align="center">
 <a href="https://console.platform.sh/projects/create-project?template=https://raw.githubusercontent.com/flovntp/api-platform-sh/main/.platform/metadata/api-platform-php8.1.template.yaml&utm_content=symfonycorp&utm_source=github&utm_medium=button&utm_campaign=deploy_on_platform">
     <img src="https://platform.sh/images/deploy/deploy-button-lg-blue.svg" alt="Deploy on Platform.sh" width="175px">
 </a>
@@ -114,12 +115,11 @@
 
 ### Quickstart
 
-<p align="center">
+<p>
 <a href="https://console.platform.sh/projects/create-project?template=https://raw.githubusercontent.com/flovntp/api-platform-sh/main/.platform/metadata/api-platform-php8.1.template.yaml&utm_content=symfonycorp&utm_source=github&utm_medium=button&utm_campaign=deploy_on_platform">
     <img src="https://platform.sh/images/deploy/deploy-button-lg-blue.svg" alt="Deploy on Platform.sh" width="175px">
 </a>
 </p>
-<br/>
 
 [Create a Platform.sh project](https://platform.sh/free-trial).
 
@@ -153,7 +153,7 @@ This will automatically create a new project and initialize the repository for y
 TODO You can also quickly recreate this project locally with the following command:
 
 ```bash
-# composer create-project flovntp/api-platform-sh:6.x -s dev
+# composer create-project flovntp/api-platform-sh:main -s dev
 ```
 
 
