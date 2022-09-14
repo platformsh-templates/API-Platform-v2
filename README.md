@@ -153,7 +153,7 @@ This will automatically create a new project and initialize the repository for y
 You can also quickly recreate this project locally with the following command:
 
 ```bash
-# composer create-project platformsh-templates/api-platform-api-admin:main -s dev
+composer create-project platformsh/api-platform -s dev
 ```
 
 > **Note:**
