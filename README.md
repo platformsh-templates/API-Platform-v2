@@ -15,21 +15,21 @@
 <a href="https://community.platform.sh"><strong>Join our community</strong></a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
 <a href="https://docs.platform.sh"><strong>Documentation</strong></a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
 <a href="https://platform.sh/blog"><strong>Blog</strong></a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-<a href="https://github.com/flovntp/api-platform-sh/issues/new?assignees=&labels=bug&template=bug_report.yml"><strong>Report a bug</strong></a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-<a href="https://github.com/flovntp/api-platform-sh/issues/new?assignees=&labels=feature+request&template=improvements.yml"><strong>Request a feature</strong></a>
+<a href="https://github.com/platformsh-templates/api-platform-api-admin/issues/new?assignees=&labels=bug&template=bug_report.yml"><strong>Report a bug</strong></a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+<a href="https://github.com/platformsh-templates/api-platform-api-admin/issues/new?assignees=&labels=feature+request&template=improvements.yml"><strong>Request a feature</strong></a>
 <br /><br />
 </p>
 
 <p align="center">
-<a href="https://github.com/flovntp/api-platform-sh/issues">
-<img src="https://img.shields.io/github/issues/flovntp/api-platform-sh.svg?style=for-the-badge&labelColor=f4f2f3&color=ffd9d9&label=Issues" alt="Open issues" />
+<a href="https://github.com/platformsh-templates/api-platform-api-admin/issues">
+<img src="https://img.shields.io/github/issues/platformsh-templates/api-platform-api-admin.svg?style=for-the-badge&labelColor=f4f2f3&color=ffd9d9&label=Issues" alt="Open issues" />
 </a>&nbsp&nbsp
-<a href="https://github.com/flovntp/api-platform-sh/pulls">
-<img src="https://img.shields.io/github/issues-pr/flovntp/api-platform-sh.svg?style=for-the-badge&labelColor=f4f2f3&color=ffd9d9&label=Pull%20requests" alt="Open PRs" />
+<a href="https://github.com/platformsh-templates/api-platform-api-admin/pulls">
+<img src="https://img.shields.io/github/issues-pr/platformsh-templates/api-platform-api-admin.svg?style=for-the-badge&labelColor=f4f2f3&color=ffd9d9&label=Pull%20requests" alt="Open PRs" />
 </a>&nbsp&nbsp
 </p>
 <p align="center">
-<a href="https://console.platform.sh/projects/create-project?template=https://raw.githubusercontent.com/flovntp/api-platform-sh/main/.platform/metadata/api-platform-php8.1.template.yaml&utm_content=symfonycorp&utm_source=github&utm_medium=button&utm_campaign=deploy_on_platform">
+<a href="https://console.platform.sh/projects/create-project?template=https://raw.githubusercontent.com/platformsh-templates/api-platform-api-admin/main/.platform/metadata/api-platform-php8.1.template.yaml&utm_content=symfonycorp&utm_source=github&utm_medium=button&utm_campaign=deploy_on_platform">
     <img src="https://platform.sh/images/deploy/deploy-button-lg-blue.svg" alt="Deploy on Platform.sh" width="175px">
 </a>
 </p>
@@ -116,7 +116,7 @@
 ### Quickstart
 
 <p>
-<a href="https://console.platform.sh/projects/create-project?template=https://raw.githubusercontent.com/flovntp/api-platform-sh/main/.platform/metadata/api-platform-php8.1.template.yaml&utm_content=symfonycorp&utm_source=github&utm_medium=button&utm_campaign=deploy_on_platform">
+<a href="https://console.platform.sh/projects/create-project?template=https://raw.githubusercontent.com/platformsh-templates/api-platform-api-admin/main/.platform/metadata/api-platform-php8.1.template.yaml&utm_content=symfonycorp&utm_source=github&utm_medium=button&utm_campaign=deploy_on_platform">
     <img src="https://platform.sh/images/deploy/deploy-button-lg-blue.svg" alt="Deploy on Platform.sh" width="175px">
 </a>
 </p>
@@ -153,7 +153,7 @@ This will automatically create a new project and initialize the repository for y
 TODO You can also quickly recreate this project locally with the following command:
 
 ```bash
-# composer create-project flovntp/api-platform-sh:main -s dev
+# composer create-project platformsh-templates/api-platform-api-admin:main -s dev
 ```
 
 
@@ -166,10 +166,10 @@ TODO You can also quickly recreate this project locally with the following comma
 For all of the other options below, clone this repository first:
 
 ```bash
-git clone https://github.com/flovntp/api-platform-sh.git
+git clone https://github.com/platformsh-templates/api-platform-api-admin.git
 ```
 
-If you're trying to deploy from GitHub, you can generate a copy of this repository first in your own namespace by clicking the [Use this template](https://github.com/flovntp/api-platform-sh/generate) button at the top of this page.
+If you're trying to deploy from GitHub, you can generate a copy of this repository first in your own namespace by clicking the [Use this template](https://github.com/platformsh-templates/api-platform-api-admin/generate) button at the top of this page.
 
 Then you can clone a copy of it locally with `TODO git clone git@github.com:YOUR_NAMESPACE/platformsh-symfony-template.git`.
 
@@ -737,9 +737,9 @@ See something that's wrong with this template that needs to be fixed? Something 
 <p align="center">
 <strong>How to contribute</strong>
 <br /><br />
-<a href="https://github.com/flovntp/api-platform-sh/issues/new?assignees=&labels=bug&template=bug_report.yml"><strong>Report a bug</strong></a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-<a href="https://github.com/flovntp/api-platform-sh/issues/new?assignees=&labels=feature+request&template=improvements.yml"><strong>Submit a feature request</strong></a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-<a href="https://github.com/flovntp/api-platform-sh/pulls"><strong>Open a pull request</strong></a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+<a href="https://github.com/platformsh-templates/api-platform-api-admin/issues/new?assignees=&labels=bug&template=bug_report.yml"><strong>Report a bug</strong></a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+<a href="https://github.com/platformsh-templates/api-platform-api-admin/issues/new?assignees=&labels=feature+request&template=improvements.yml"><strong>Submit a feature request</strong></a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+<a href="https://github.com/platformsh-templates/api-platform-api-admin/pulls"><strong>Open a pull request</strong></a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
 <br />
 </p>
 <br />
@@ -754,8 +754,8 @@ See something that's wrong with this template that needs to be fixed? Something 
 <h3 align="center"><strong>Thanks to all of our amazing contributors!</strong></h3>
 <br/>
 <p align="center">
-<a href="https://github.com/flovntp/api-platform-sh/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=flovntp/api-platform-sh" />
+<a href="https://github.com/platformsh-templates/api-platform-api-admin/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=platformsh-templates/api-platform-api-admin" />
 </a>
 </p>
 
