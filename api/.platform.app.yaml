@@ -17,6 +17,7 @@ runtime:
     extensions:
         - apcu
         - pdo_pgsql
+        - sodium
 
 dependencies:
     php:
