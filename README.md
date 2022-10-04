@@ -6,7 +6,7 @@
 </a>
 </p>
 
-<h1 align="center">Deploy API Platform on Platform.sh</h1>
+<h1 align="center">Deploy API Platform api and API Platform admin (ReactJS) on Platform.sh</h1>
 
 <p align="center">
 <strong>Contribute, request a feature, or check out our resources</strong>
@@ -15,21 +15,21 @@
 <a href="https://community.platform.sh"><strong>Join our community</strong></a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
 <a href="https://docs.platform.sh"><strong>Documentation</strong></a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
 <a href="https://platform.sh/blog"><strong>Blog</strong></a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-<a href="https://github.com/platformsh-templates/api-platform-api-admin/issues/new?assignees=&labels=bug&template=bug_report.yml"><strong>Report a bug</strong></a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-<a href="https://github.com/platformsh-templates/api-platform-api-admin/issues/new?assignees=&labels=feature+request&template=improvements.yml"><strong>Request a feature</strong></a>
+<a href="https://github.com/platformsh-templates/API-Platform-v2/issues/new?assignees=&labels=bug&template=bug_report.yml"><strong>Report a bug</strong></a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+<a href="https://github.com/platformsh-templates/API-Platform-v2/issues/new?assignees=&labels=feature+request&template=improvements.yml"><strong>Request a feature</strong></a>
 <br /><br />
 </p>
 
 <p align="center">
-<a href="https://github.com/platformsh-templates/api-platform-api-admin/issues">
-<img src="https://img.shields.io/github/issues/platformsh-templates/api-platform-api-admin.svg?style=for-the-badge&labelColor=f4f2f3&color=ffd9d9&label=Issues" alt="Open issues" />
+<a href="https://github.com/platformsh-templates/API-Platform-v2/issues">
+<img src="https://img.shields.io/github/issues/platformsh-templates/API-Platform-v2.svg?style=for-the-badge&labelColor=f4f2f3&color=ffd9d9&label=Issues" alt="Open issues" />
 </a>&nbsp&nbsp
-<a href="https://github.com/platformsh-templates/api-platform-api-admin/pulls">
-<img src="https://img.shields.io/github/issues-pr/platformsh-templates/api-platform-api-admin.svg?style=for-the-badge&labelColor=f4f2f3&color=ffd9d9&label=Pull%20requests" alt="Open PRs" />
+<a href="https://github.com/platformsh-templates/API-Platform-v2/pulls">
+<img src="https://img.shields.io/github/issues-pr/platformsh-templates/API-Platform-v2.svg?style=for-the-badge&labelColor=f4f2f3&color=ffd9d9&label=Pull%20requests" alt="Open PRs" />
 </a>&nbsp&nbsp
 </p>
 <p align="center">
-<a href="https://console.platform.sh/projects/create-project?template=https://raw.githubusercontent.com/platformsh-templates/api-platform-api-admin/main/.platform/metadata/api-platform-php8.1.template.yaml&utm_content=symfonycorp&utm_source=github&utm_medium=button&utm_campaign=deploy_on_platform">
+<a href="https://console.platform.sh/projects/create-project?template=https://raw.githubusercontent.com/platformsh-templates/API-Platform-v2/main/.platform/metadata/api-platform-3-php8.1.template.yaml&utm_content=platformsh-templates&utm_source=github&utm_medium=button&utm_campaign=deploy_on_platform" target="_blank">
     <img src="https://platform.sh/images/deploy/deploy-button-lg-blue.svg" alt="Deploy on Platform.sh" width="175px">
 </a>
 </p>
@@ -55,59 +55,12 @@
    <BR>The generated code has been optimized for a typical web application hosted on <a href="https://platform.sh/">Platform.sh</a>.
 </p>
 
-[comment]: <> (### Features)
-
-[comment]: <> (<p>)
-
-[comment]: <> (   On top of the regular API Platform component and API Platform Admin, we have made opinionated choices and configured your project)
-
-[comment]: <> (   to get you started faster and make you more productive:)
-
-[comment]: <> (   <ul>)
-
-[comment]: <> (       <li>)
-
-[comment]: <> (           The <a href="https://github.com/symfony/webapp-pack/blob/main/composer.json">webapp pack</a>, which includes all recommended Symfony packages for web applications, has been installed and configured, including:)
-
-[comment]: <> (  <ul>)
-
-[comment]: <> (      <li><a href="http://twig.symfony.com/">Twig</a> as a templating system</li>)
-
-[comment]: <> (      <li><a href="">Doctrine</a> for the ORM and database migrations</li>)
-
-[comment]: <> (      <li><a href="">Webpack Encore</a> for JavaScript management</li>)
-
-[comment]: <> (      <li><a href="">Symfony UX</a> for progressive JavaScript applications</li>)
-
-[comment]: <> (      <li><a href="">Maker bundle</a> to let you quickly generate code for your controllers, migrations, and more</li>)
-
-[comment]: <> (      <li><a href="">Symfony Web Profiler</a> to ease debugging issues locally.</li>)
-
-[comment]: <> (  </ul>)
-
-[comment]: <> (       </li>)
-
-[comment]: <> (       <li>A configuration optimized for <strong>PostgreSQL as a database</strong>.</li>)
-
-[comment]: <> (       <li>A <strong>Docker compose configuration</strong> for PostgreSQL and a <strong>mail catcher</strong> for local development.</li>)
-
-[comment]: <> (       <li>An <strong>optimized Platform.sh configuration</strong> for Symfony and all included services.</li>)
-
-[comment]: <> (       <li>A bootstrapped <strong>database migration system</strong>.</li>)
-
-[comment]: <> (       <li>An optimized <strong>async configuration</strong> for sending emails and notifications asynchronously with retry and failure features enabled on PostgreSQL.</li>)
-
-[comment]: <> (   </ul>)
-
-[comment]: <> (</p>)
-
 ### Features
-
 - PHP 8.1
-- PostgreSQL 13
+- PostgreSQL v13
 - Composer-based build
-- Yarn 1.22.15
-- NodeJS 16
+- Yarn v1.22.15
+- NodeJS v16
 - a sample Greeting Entity 
 
 ## Getting started
@@ -117,7 +70,7 @@
 ### Quickstart
 
 <p>
-<a href="https://console.platform.sh/projects/create-project?template=https://raw.githubusercontent.com/platformsh-templates/api-platform-api-admin/main/.platform/metadata/api-platform-php8.1.template.yaml&utm_content=symfonycorp&utm_source=github&utm_medium=button&utm_campaign=deploy_on_platform">
+<a href="https://console.platform.sh/projects/create-project?template=https://raw.githubusercontent.com/platformsh-templates/API-Platform-v2/main/.platform/metadata/api-platform-3-php8.1.template.yaml&utm_content=platformsh-template&utm_source=github&utm_medium=button&utm_campaign=deploy_on_platform" target="_blank">
     <img src="https://platform.sh/images/deploy/deploy-button-lg-blue.svg" alt="Deploy on Platform.sh" width="175px">
 </a>
 </p>
@@ -126,35 +79,36 @@
 
 Clone the GitHub repository and push its content to your Platform.sh project:
 
-```
-git clone git@github.com:platformsh-templates/api-platform-api-admin.git
-cd api-platform-api-admin
+```bash
+git clone git@github.com:platformsh-templates/API-Platform-v2.git
+cd API-Platform-v2/
 git remote add platform [project-id]@git.[region].platform.sh:[project-id].git
 git push platform main
 ```
 
-SSH to the `api` remote application and create the database schema:
+[comment]: <> (SSH to the `api` remote application and create the database schema:)
 
-```
-ssh [project-id]-master-[string-identifier]--api@ssh.[region].platform.sh
-php bin/console doctrine:schema:create
-```
+[comment]: <> (```)
+
+[comment]: <> (ssh [project-id]-master-[string-identifier]--api@ssh.[region].platform.sh)
+
+[comment]: <> (php bin/console doctrine:schema:create)
+
+[comment]: <> (```)
 
 You can now access the `admin` URL provided by Platform.sh and enjoy.
-
-
-
 
 The quickest way to deploy this template on Platform.sh is by clicking the button below.
 This will automatically create a new project and initialize the repository for you.
 
+[comment]: <> (TODO You can also quickly recreate this project locally with the following command:)
 
+[comment]: <> (```bash)
 
-You can also quickly recreate this project locally with the following command:
+[comment]: <> (composer create-project platformsh-templates/API-Platform-v2:main -s dev)
 
-```bash
-composer create-project platformsh/api-platform -s dev
-```
+[comment]: <> (```)
+
 
 > **Note:**
 >
@@ -162,15 +116,16 @@ composer create-project platformsh/api-platform -s dev
 
 #### Other deployment options
 
-For all of the other options below, clone this repository first:
+For all the other options below, clone this repository first:
 
 ```bash
-git clone https://github.com/platformsh-templates/api-platform-api-admin.git
+git clone https://github.com/platformsh-templates/API-Platform-v2.git
 ```
 
-If you're trying to deploy from GitHub, you can generate a copy of this repository first in your own namespace by clicking the [Use this template](https://github.com/platformsh-templates/api-platform-api-admin/generate) button at the top of this page.
+If you're trying to deploy from GitHub, you can generate a copy of this repository first in your own namespace by clicking the [Use this template](https://github.com/platformsh-templates/API-Platform-v2/generate) button at the top of this page.
 
-Then you can clone a copy of it locally with `git clone git@github.com:YOUR_NAMESPACE/api-platform-api-admin.git`.
+Then you can clone a copy of it locally with `git clone git@github.com:YOUR_NAMESPACE/API-Platform-v2.git`.
+
 
 <details>
 <summary>Deploy directly to Platform.sh from the command line</summary>
@@ -355,7 +310,7 @@ $ platform get PROJECT_ID
 
 $ cd project-name
 
-$ platform environment:branch updates
+$ platform environment:branch new_branch
 
 ```
 
@@ -364,47 +319,46 @@ $ platform environment:branch updates
 <summary>API Platform: using Symfony Server</summary>
 In general, the steps are as follows:
 
-1. if you didn't get your Platform project yet, `git clone git@github.com:platformsh-templates/api-platform-api-admin.git api-platform` 
-(or your own repo if you already created a fork)
+1. if you didn't get your Platform project yet, `git clone git@github.com:platformsh-templates/api-platform-api-admin.git api-platform`
+   (or your own repo if you already created a fork)
 
 2. `cd ./api-platform`
 
 3. Start the API component with those steps:
 
    1. `cd ./api`
-   
-   2. Install the <a href="https://symfony.com/download" target="_blank">Symfony CLI</a>
-   
+
+   1. Install the <a href="https://symfony.com/download" target="_blank">Symfony CLI</a>
+
+   1. start docker container for the database : `docker-compose up -d`
+
    1. `symfony composer install`
-   
-   1. check that your ./api/.env file contains a valid `DATABASE_URL` to let Symfony connect to your database
-   
-   1. `symfony console doctrine:database:create`
-   
-   1. `symfony console doctrine:schema:create` (add option `--dump-sql` to check if table `greeting` would be created)
-   
-   1. `symfony server:start -d` (you will have a prompt giving the generated local url and please add `/api` to display your swagger interface, showing entity Greeting CRUD option)
-   
-   1. et voilà
-   
+
+   1. check that your api/.env file contains a valid `DATABASE_URL` to let Symfony connect to your database
+
+   1. `symfony console doctrine:schema:create --dump-sql` (change to option `--force` to run those sql requests)
+
+   1. `symfony server:start -d`
+
+   1. et voilà, you can go on `<generatedUrlFromSymfonyServerStartCommand>/api` to display your swagger interface, showing entities Offer and Product CRUD option
+
 > **Note:**
-> if symfony server does not start your app using port 8000, please change `REACT_APP_PUBLIC_URL` from `./admin/.env` file accordingly
+> if symfony server does not start your app using default port 8000, please change `REACT_APP_PUBLIC_URL` from `./admin/.env` file accordingly
 
 3. Start the admin component with those steps
-   
+
    1. `cd ../admin` (assuming that you're in the `./api` folder)
-   
+
    1. `yarn install`
 
    1. `yarn start`
-   
-   1. et voilà, you can access the admin interface following this url <a href="http://localhost:3000/" target="_blank">http://localhost:3000</a> (if not open automatically)
-   
+
+   1. et voilà, a new browser tab would open at url <a href="http://localhost:3000/" target="_blank">http://localhost:3000</a>
+
 </details>
 
 > **Note:**
 > For many of the steps above, you may need to include the CLI flags `-p PROJECT_ID` and `-e ENVIRONMENT_ID` if you are not in the project directory or if the environment is associated with an existing pull request.
-
 ### Deploying to Platform.sh
 
 This repository has all of the code it needs in order to deploy to Platform.sh.
@@ -450,10 +404,16 @@ This repository has all of the code it needs in order to deploy to Platform.sh.
 
    Then from within your local copy, run the command `platform project:set-remote PROJECT_ID`.
 
-1. Push
+1. Push using git
 
    ```bash
    git push platform DEFAULT_BRANCH
+   ```
+
+1. or Push using platform
+
+   ```bash
+   platform push
    ```
 
 <!-- <br/>
@@ -572,7 +532,6 @@ This repository has all of the code it needs in order to deploy to Platform.sh.
 
 ### Migrating your data
 
-
 If you are moving an existing site to Platform.sh, then in addition to code you also need to migrate your data. That means your database and your files.
 
 <details>
@@ -659,7 +618,7 @@ php bin/console cache:pool:clear cache.redis
 
 ### Blackfire.io: creating a Continuous Observability Strategy
 
-This template includes a starting [`.blackfire.yml`](.blackfire.yml) file in the api folder that can be used to enable [Application Performance Monitoring](https://blackfire.io/docs/monitoring-cookbooks/index), [Profiling](https://blackfire.io/docs/profiling-cookbooks/index), [Builds](https://blackfire.io/docs/builds-cookbooks/index) and [Performance Testing](https://blackfire.io/docs/testing-cookbooks/index) on your project. Platform.sh comes with Blackfire pre-installed on application containers, and [setting up requires minimal configuration](https://docs.platform.sh/integrations/observability/blackfire.html).
+This template includes a starting [`.blackfire.yml`](.blackfire.yml) file that can be used to enable [Application Performance Monitoring](https://blackfire.io/docs/monitoring-cookbooks/index), [Profiling](https://blackfire.io/docs/profiling-cookbooks/index), [Builds](https://blackfire.io/docs/builds-cookbooks/index) and [Performance Testing](https://blackfire.io/docs/testing-cookbooks/index) on your project. Platform.sh comes with Blackfire pre-installed on application containers, and [setting up requires minimal configuration](https://docs.platform.sh/integrations/observability/blackfire.html).
 
 * [What is Blackfire?](https://blackfire.io/docs/introduction)
 * [Configuring Blackfire.io on a Platform.sh project](https://docs.platform.sh/integrations/observability/blackfire.html)
@@ -670,11 +629,14 @@ This template includes a starting [`.blackfire.yml`](.blackfire.yml) file in the
 * [Using Builds](https://blackfire.io/docs/builds-cookbooks/index)
 * [Configuring Integrations](https://blackfire.io/docs/integrations/index)
 
+
 ### Resources
 
-- [API Platform API component](https://api-platform.com/docs/core/getting-started/)
-- [API Platform Admin component](https://api-platform.com/docs/admin/getting-started/)
+
+- [API Platform](https://api-platform.com/)
+
 - [Platform.sh PHP documentation](https://docs.platform.sh/languages/php.html)
+
 
 ### Contact
 
@@ -732,9 +694,9 @@ See something that's wrong with this template that needs to be fixed? Something 
 <p align="center">
 <strong>How to contribute</strong>
 <br /><br />
-<a href="https://github.com/platformsh-templates/api-platform-api-admin/issues/new?assignees=&labels=bug&template=bug_report.yml"><strong>Report a bug</strong></a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-<a href="https://github.com/platformsh-templates/api-platform-api-admin/issues/new?assignees=&labels=feature+request&template=improvements.yml"><strong>Submit a feature request</strong></a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-<a href="https://github.com/platformsh-templates/api-platform-api-admin/pulls"><strong>Open a pull request</strong></a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+<a href="https://github.com/platformsh-templates/API-Platform-v2/issues/new?assignees=&labels=bug&template=bug_report.yml"><strong>Report a bug</strong></a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+<a href="https://github.com/platformsh-templates/API-Platform-v2/issues/new?assignees=&labels=feature+request&template=improvements.yml"><strong>Submit a feature request</strong></a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+<a href="https://github.com/platformsh-templates/API-Platform-v2/pulls"><strong>Open a pull request</strong></a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
 <br />
 </p>
 <br />
@@ -749,8 +711,8 @@ See something that's wrong with this template that needs to be fixed? Something 
 <h3 align="center"><strong>Thanks to all of our amazing contributors!</strong></h3>
 <br/>
 <p align="center">
-<a href="https://github.com/platformsh-templates/api-platform-api-admin/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=platformsh-templates/api-platform-api-admin" />
+<a href="https://github.com/platformsh-templates/API-Platform-v2/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=platformsh-templates/API-Platform-v2" />
 </a>
 </p>
 

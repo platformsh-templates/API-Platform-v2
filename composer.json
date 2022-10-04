@@ -1,6 +1,6 @@
 {
-    "name": "platformsh/api-platform",
-    "description": "API-Platform template for Platform.sh",
+    "name": "platformsh/api-platform-2",
+    "description": "API-Platform v2 template for Platform.sh",
     "type": "project",
     "license": "MIT",
     "require": {}
