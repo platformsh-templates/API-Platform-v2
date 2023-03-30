@@ -1,10 +1,10 @@
 version: 1
 
 info:
-  id: platformsh-templates/api-platform-api-php8.1-admin-node16
-  name: API Platform (api + admin)/PHP 8.1/webapp
+  id: platformsh-templates/api-platform-2-api-php8.1-admin-node16
+  name: API Platform v3 (api + admin + mercure)/PHP 8.1/webapp
   description: |
-    <p>This template provides an API Platform skeleton with api and admin components.</p>
+    <p>This template provides an API Platform v2 skeleton with api and admin components.</p>
     <p>It is intended for you to use as a starting point and modify for your own needs.</p>
     <p>It comes pre-configured with a sample Greeting entity.</p>
   tags:
@@ -19,13 +19,13 @@ info:
     - heading: "Features"
       content: |
         API Platform api v2.6.8<br />
+        API Platform admin v3.3.0<br />
         PHP 8.1<br />
         PostgreSQL 13<br />
-        API Platform admin v3.3.0<br />
         NodeJs v16<br />
         Automatic TLS certificates<br />
 initialize:
-  repository: https://github.com/flovntp/api-platform-sh@main
+  repository: https://github.com/platformsh-templates/API-Platform-v2@main
   config: null
   files: []
-  profile: API Platform ("api" on PHP 8.1 and "admin" on NodeJs v16)
+  profile: API Platform v2 ("api" on PHP 8.1 and "admin" on NodeJs v16)
