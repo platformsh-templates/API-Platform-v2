@@ -1,3 +1,10 @@
+> [!WARNING]
+> **This repository is no longer maintained by our internal teams.**  
+> The template is provided *as is* and will not receive updates, bug fixes, or new features.  
+> You are welcome to contribute on it or fork the repository and modify it for your own use.
+> To deploy this template on [Upsun](https://www.upsun.com), you can use the command [upsun project:convert](https://docs.upsun.com/administration/cli/reference.html#projectconvert)
+> on this codebase to convert the existing `.platform.app.yaml` configuration file to the [Upsun Flex format](https://docs.upsun.com/create-apps/app-reference/single-runtime-image.html).
+
 <p align="right">
 <a href="https://platform.sh">
    <svg viewBox="0 0 200 40" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -27,11 +34,6 @@
 <a href="https://github.com/platformsh-templates/API-Platform-v2/pulls">
 <img src="https://img.shields.io/github/issues-pr/platformsh-templates/API-Platform-v2.svg?style=for-the-badge&labelColor=f4f2f3&color=ffd9d9&label=Pull%20requests" alt="Open PRs" />
 </a>&nbsp&nbsp
-</p>
-<p align="center">
-<a href="https://console.platform.sh/projects/create-project?template=https://raw.githubusercontent.com/platformsh-templates/API-Platform-v2/main/.platform/metadata/api-platform-php8.1.template.yaml&utm_content=platformsh-templates&utm_source=github&utm_medium=button&utm_campaign=deploy_on_platform" target="_blank">
-    <img src="https://platform.sh/images/deploy/deploy-button-lg-blue.svg" alt="Deploy on Platform.sh" width="175px">
-</a>
 </p>
 
 <hr>
@@ -68,12 +70,6 @@
 [comment]: <> (### Deploy)
 
 ### Quickstart
-
-<p>
-<a href="https://console.platform.sh/projects/create-project?template=https://raw.githubusercontent.com/platformsh-templates/API-Platform-v2/main/.platform/metadata/api-platform-php8.1.template.yaml&utm_content=platformsh-template&utm_source=github&utm_medium=button&utm_campaign=deploy_on_platform" target="_blank">
-    <img src="https://platform.sh/images/deploy/deploy-button-lg-blue.svg" alt="Deploy on Platform.sh" width="175px">
-</a>
-</p>
 
 [Create a Platform.sh project](https://platform.sh/free-trial).
 
@@ -643,7 +639,7 @@ This template includes a starting [`.blackfire.yml`](.blackfire.yml) file that c
 This template is maintained by the Platform.sh Developer Relations team, and they will be notified of all issues and pull requests you open here.
 
 - **Community:** Share your question with the community, or see if it's already been asked on our [Community site](https://community.platform.sh).
-- **Slack:** If you haven't done so already, you can join Platform.sh's [public Slack](https://chat.platform.sh/) channels and ping the `@devrel_team` with any questions.
+- **Discord:** If you haven't done so already, you can join Platform.sh's [public Discord](https://discord.gg/upsun) channels and ping the `@devrel_team` with any questions.
 
 
 ### About Platform.sh
@@ -704,7 +700,7 @@ See something that's wrong with this template that needs to be fixed? Something 
 <strong>Need help?</strong>
 <br /><br />
 <a href="https://community.platform.sh"><strong>Ask the Platform.sh Community</strong></a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-<a href="https://chat.platform.sh"><strong>Join us on Slack</strong></a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+<a href="https://discord.gg/upsun"><strong>Join us on Discord</strong></a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
 <br />
 </p>
 <br />
